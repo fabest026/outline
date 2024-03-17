@@ -114,7 +114,7 @@ if submit_button:
 
 
 
- # Adding the HTML footer
+# Adding the HTML footer
 # Profile footer HTML for sidebar
 
 
@@ -175,12 +175,14 @@ footer_css = """
 
 # HTML for the footer - replace your credit information here
 footer_html = f"""
-<div class="footer" style="background-color: #333; padding: 10px; display: flex; justify-content: center; align-items: center; width: 100%;">
-    <p style="font-size: 14px; font-style: italic; color: #fff; margin-bottom: 0px; opacity: 0.9; line-height: 1.2; display: flex; align-items: center; justify-content: center;">Developed by: <span style="font-size: 16px; font-weight: 500; font-family: 'Open Sans', sans-serif;">Farhan Akbar</span></p>
-    <div style="display: flex; align-items: center;">
-        <a href="https://www.linkedin.com/in/farhan-akbar-ai/" style="margin: 0px 5px;"><img src="https://img.shields.io/badge/LinkedIn-Profile-blue?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" style="height: 20px; width: auto; background-color: #333;"/></a>
-        <a href="mailto:rasolehri@gmail.com" style="margin: 0px 5px;"><img src="https://img.shields.io/badge/Email-Contact%20Me-red?style=for-the-badge&logo=email&logoColor=white" alt="Email" style="height: 20px; width: auto; background-color: #333;"/></a>
-    </div>
+<div class="footer">
+    <p style="font-size: 12px; font-style: italic; color: gray; margin-bottom: 0px; opacity: 0.7; line-height: 1.2; text-align: center;">
+        <span style="display: block; font-weight: 800; letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 8px; font-family: 'Open Sans', sans-serif;">Developed by::</span>
+        <span style="font-size: 20px; font-weight: 800; text-transform: uppercase; font-family: 'Open Sans', sans-serif;">Farhan Akbar</span>
+    </p>
+    <a href="https://www.linkedin.com/in/farhan-akbar-ai/"><img src="https://img.shields.io/badge/LinkedIn-Profile-blue?style=for-the-badge&logo=linkedin" alt="LinkedIn"/></a>
+    <a href="https://api.whatsapp.com/send?phone=923114202358"><img src="https://img.shields.io/badge/WhatsApp-Chat%20Me-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" alt="WhatsApp"/></a>
+    <a href="mailto:rasolehri@gmail.com"><img src="https://img.shields.io/badge/Email-Contact%20Me-red?style=for-the-badge&logo=email" alt="Email"/></a>
 </div>
 """
 
