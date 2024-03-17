@@ -111,6 +111,82 @@ if submit_button:
 
         # Display the blog output
         st.write(response.text)
+
+
+
+ # Adding the HTML footer
+# Profile footer HTML for sidebar
+
+
+# Render profile footer in sidebar at the "bottom"
+# Set a background image
+def set_background_image():
+    st.markdown(
+        """
+        <style>
+        .stApp {
+            background-image: url("https://images.pexels.com/photos/4097159/pexels-photo-4097159.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+            background-size: cover;
+        }
+        </style>
+        """,
+        unsafe_allow_html=True
+    )
+
+set_background_image()
+
+# Set a background image for the sidebar
+sidebar_background_image = '''
+<style>
+[data-testid="stSidebar"] {
+    background-image: url("https://www.pexels.com/photo/abstract-background-with-green-smear-of-paint-6423446/");
+    background-size: cover;
+}
+</style>
+'''
+
+st.sidebar.markdown(sidebar_background_image, unsafe_allow_html=True)
+
+hide_st_style = """
+            <style>
+            #MainMenu {visibility: hidden;}
+            footer {visibility: hidden;}
+            header {visibility: hidden;}
+            </style>
+            """
+st.markdown(hide_st_style, unsafe_allow_html=True)
+
+# Custom CSS to inject into the Streamlit app
+footer_css = """
+<style>
+.footer {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    width: auto;
+    background-color: transparent;
+    color: black;
+    text-align: right;
+    padding-right: 10px;
+}
+</style>
+"""
+
+
+# HTML for the footer - replace your credit information here
+footer_html = f"""
+<div class="footer" style="background-color: #333; padding: 10px; display: flex; justify-content: center; align-items: center; width: 100%;">
+    <p style="font-size: 14px; font-style: italic; color: #fff; margin-bottom: 0px; opacity: 0.9; line-height: 1.2; display: flex; align-items: center; justify-content: center;">Developed by: <span style="font-size: 16px; font-weight: 500; font-family: 'Open Sans', sans-serif;">Farhan Akbar</span></p>
+    <div style="display: flex; align-items: center;">
+        <a href="https://www.linkedin.com/in/farhan-akbar-ai/" style="margin: 0px 5px;"><img src="https://img.shields.io/badge/LinkedIn-Profile-blue?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" style="height: 20px; width: auto; background-color: #333;"/></a>
+        <a href="mailto:rasolehri@gmail.com" style="margin: 0px 5px;"><img src="https://img.shields.io/badge/Email-Contact%20Me-red?style=for-the-badge&logo=email&logoColor=white" alt="Email" style="height: 20px; width: auto; background-color: #333;"/></a>
+    </div>
+</div>
+"""
+
+# Combine CSS and HTML for the footer
+st.markdown(footer_css, unsafe_allow_html=True)
+st.markdown(footer_html, unsafe_allow_html=True)
         
         
         
