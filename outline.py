@@ -49,17 +49,54 @@ st.set_page_config(
     initial_sidebar_state="collapsed",
 )
 
-# title of our app
-st.title('✍️ Farhan BlogGPT')
+# Add the Title
+st.markdown(
+    "<h1 style='text-align: center; color: black;'>"
+    "✍️ Farhan BlogGPT"
+    "</h1>",
+    unsafe_allow_html=True
+)
+
+#st.title('✍️ Farhan BlogGPT')
 
 # create a subheader
-st.subheader("AI Blog Outlines Generator 🤖")
+st.markdown('''
+<style>
+h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    line-height: 0px;
+    margin-top: 0;
+    margin-bottom: 24px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+</style>
+<h3 style="color: black;">Generate the best blog Outlines you've ever read with just a few clicks! 💥</h3>
+''', unsafe_allow_html=True)
 
 # sidebar for the user input
 
 with st.sidebar:
+    st.markdown(
+        "<style>h1 {text-align: center;}</style>",
+        unsafe_allow_html=True
+    )
+    st.markdown(
+        "<style>h1 {text-align: center; color: black;}</style>",
+        unsafe_allow_html=True
+    )
     st.title("Input Settings")
-    st.subheader("Enter Details for the Outlines")
+    
+    st.markdown(
+        "<style>"
+        "h4 {text-align: left; color: black; margin-top: 4px;}"
+        "p {text-align: left; color: black;}"
+        "</style>",
+        unsafe_allow_html=True
+    )
+    st.markdown("<h4>Enter Details for the Outlines: </h4>", unsafe_allow_html=True)
     
     # Blog Title
     blog_title = st.text_input("Blog Title ")
