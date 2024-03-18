@@ -142,7 +142,7 @@ with st.sidebar:
     clear_button = st.button("Clear All")
 
 if submit_button:
-    # Display the spinner
+    	# Display the spinner
 	with st.spinner("Converting desired input to prompt..."):
         	st.markdown('''
             	<style>
@@ -154,8 +154,8 @@ if submit_button:
         	# Generate the response
         	response = model.generate_content(prompt_parts)
 
-        # Display the blog output
-        st.write(response.text)
+        	# Display the blog output
+        	st.write(response.text)
 
 
 
