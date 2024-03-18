@@ -52,12 +52,12 @@ st.set_page_config(
 # Add the Title
 st.markdown(
     "<h1 style='text-align: center; color: black;'>"
-    "✍️ Farhan BlogGPT"
+    "✨ Ai Outline Generator"
     "</h1>",
     unsafe_allow_html=True
 )
 
-#st.title('✍️ Ai Outline Generator')
+#st.title('✨ Ai Outline Generator')
 
 # create a subheader
 st.markdown('''
@@ -73,7 +73,7 @@ h3 {
     justify-content: center;
 }
 </style>
-<h3 style="color: black;">Generate the best blog Outlines you've ever read with just a few clicks! 💥</h3>
+<h3 style="color: black;"> 🔥 Generate the best blog Outlines you've ever read with just a few clicks! 💥</h3>
 ''', unsafe_allow_html=True)
 
 # sidebar for the user input
@@ -143,6 +143,14 @@ with st.sidebar:
 
 if submit_button:
     # Display the spinner
+        with st.spinner("Converting desired input to prompt..."):
+        st.markdown('''
+            <style>
+                .element-container .element-spinner .spinner {
+                    color: #3498db;
+                }
+            </style>
+        ''', unsafe_allow_html=True)
         # Generate the response
         response = model.generate_content(prompt_parts)
 
