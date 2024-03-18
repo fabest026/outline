@@ -57,7 +57,7 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-#st.title('✍️ Farhan BlogGPT')
+#st.title('✍️ Ai Outline Generator')
 
 # create a subheader
 st.markdown('''
