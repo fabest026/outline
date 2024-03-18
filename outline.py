@@ -73,7 +73,7 @@ h3 {
     justify-content: center;
 }
 </style>
-<h3 style="color: black;">🔥 Generate the best blog Outlines you've ever read with just a few clicks! 💥</h3>
+<h3 style="color: black;">🔥Generate the best blog Outlines you've ever read with just a few clicks!💥</h3>
 ''', unsafe_allow_html=True)
 
 # sidebar for the user input
