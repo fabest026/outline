@@ -151,8 +151,8 @@ if submit_button:
                 }
             	</style>
         	''', unsafe_allow_html=True)
-        # Generate the response
-        response = model.generate_content(prompt_parts)
+        	# Generate the response
+        	response = model.generate_content(prompt_parts)
 
         # Display the blog output
         st.write(response.text)
