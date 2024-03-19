@@ -44,7 +44,7 @@ model = genai.GenerativeModel(model_name="gemini-pro", generation_config=generat
 # Navbar
 st.set_page_config(
     page_title="Blog Outline",
-    page_icon="📝",
+    page_icon="👨‍⚖️",
     layout="centered",
     initial_sidebar_state="collapsed",
 )
@@ -73,7 +73,7 @@ h3 {
     justify-content: center;
 }
 </style>
-<h3 style="color: black;">🔥Generate the best blog Outlines you've ever read with just a few clicks!💥</h3>
+<h3 style="text-align: center; color: black; font-weight: 300; font-style: italic;">📑&nbsp;&nbsp;Generate the best blog Outlines you've ever read within just a few clicks!&nbsp;&nbsp;💥</h3>
 ''', unsafe_allow_html=True)
 
 # sidebar for the user input
