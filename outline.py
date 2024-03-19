@@ -43,7 +43,7 @@ model = genai.GenerativeModel(model_name="gemini-pro", generation_config=generat
 
 # Navbar
 st.set_page_config(
-    page_title="Blog Outline",
+    page_title="Blog Outlines",
     page_icon="👨‍⚖️",
     layout="centered",
     initial_sidebar_state="collapsed",
@@ -52,7 +52,7 @@ st.set_page_config(
 # Add the Title
 st.markdown(
     "<h1 style='text-align: center; color: black;'>"
-    "✨ Ai Outline Generator"
+    "✨ Ai Outlines Generator"
     "</h1>",
     unsafe_allow_html=True
 )
